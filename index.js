@@ -8,7 +8,8 @@ function create2DArray(outerSize, innerSize, value) {
     Math.floor(outerSize) !== outerSize ||
     Math.floor(innerSize) !== innerSize
   ) {
-    console.log("Size inputs must be positive integers");
+    alert("Size inputs must be positive integers");
+    return;
   }
 
   return Array(outerSize)
