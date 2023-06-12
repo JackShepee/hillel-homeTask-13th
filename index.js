@@ -16,5 +16,5 @@ function create2DArray(outerSize, innerSize, value) {
     .map(() => Array(innerSize).fill(value));
 }
 
-let array = create2DArray(2, 4, "hillel");
+const array = create2DArray(2, 4, "hillel");
 console.log(array);
