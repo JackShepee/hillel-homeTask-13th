@@ -16,5 +16,15 @@ function create2DArray(outerSize, innerSize, value) {
     .map(() => Array(innerSize).fill(value));
 }
 
-const array = create2DArray(2, 4, "hillel");
-console.log(array);
+const enteredOuterSize = Number(prompt("Enter outer size of array"));
+const enteredInnerSize = Number(prompt("Enter inner size of array"));
+const enteredValue = prompt("Enter value for array");
+
+if (enteredOuterSize && enteredInnerSize && enteredValue !== null) {
+  const array = create2DArray(enteredOuterSize, enteredInnerSize, enteredValue);
+  if (array !== undefined) {
+    alert(JSON.stringify(array));
+  }
+} else {
+  alert("Invalid inputs!");
+}
